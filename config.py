@@ -7,11 +7,12 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 DATA_DIR = PROJECT_ROOT / "data"
+SYNTHETIC_DIR = DATA_DIR / "synthetic"
 CURVE_DIR = PROJECT_ROOT / "curve"
 OUTPUT_DIR = PROJECT_ROOT / "output"
 
-BONDS_FILE = DATA_DIR / "bonds.csv"
-LIABILITIES_FILE = DATA_DIR / "liabilities.csv"
+BONDS_FILE = SYNTHETIC_DIR / "bonds.csv"
+LIABILITIES_FILE = SYNTHETIC_DIR / "liabilities.csv"
 
 
 # Rate conventions
